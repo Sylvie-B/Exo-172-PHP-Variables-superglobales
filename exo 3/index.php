@@ -28,12 +28,10 @@
 
 <?php
 
-
-
 if(isset($_POST['userId'], $_POST['userPass'])){
     $userId = $_POST['userId'];
     $userPass = $_POST['userPass'];
-    setcookie('userId', $userId, time() + 3600, "/");
-    setcookie('userPass', $userPass, time() + 3600, "/");
+    setcookie('userId', $userId, time() + 60 * 10, "/");
+    setcookie('userPass', $userPass, time() + 60 * 10, "/");
 }
 

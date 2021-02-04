@@ -14,7 +14,7 @@ session_start();
 </head>
 <body>
 
-<a href="page2.php">page 2</a>
+<a href="exo2.php">page 2</a>
 
 </body>
 </html>
