@@ -33,7 +33,7 @@
 if(isset($_POST['userId'], $_POST['userPass'])){
     $userId = $_POST['userId'];
     $userPass = $_POST['userPass'];
-    setcookie('ident', $userId);
-    setcookie('pass', $userPass);
+    setcookie('userId', $userId, time() + 3600, "/");
+    setcookie('userPass', $userPass, time() + 3600, "/");
 }
 
