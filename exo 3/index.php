@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -31,7 +36,8 @@
 if(isset($_POST['userId'], $_POST['userPass'])){
     $userId = $_POST['userId'];
     $userPass = $_POST['userPass'];
-    setcookie('userId', $userId, time() + 60 * 10, "/");
-    setcookie('userPass', $userPass, time() + 60 * 10, "/");
+    setcookie('userId', $userId, time() + 60 * 10, "/", "localhost");
+    setcookie('userPass', $userPass, time() + 60 * 10, "/", "localhost");
 }
+
 
